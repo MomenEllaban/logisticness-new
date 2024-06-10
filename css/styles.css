@@ -393,6 +393,7 @@ ul.Service_ul li:before {
   width: fit-content;
   position: relative;
   overflow: hidden;
+  /* transition: transform 2s ease-in-out; */
 }
 
 .btn.btn-styled span {
@@ -400,12 +401,18 @@ ul.Service_ul li:before {
   z-index: 1;
   color: var(--secondary-color);
   text-decoration: none;
+
+  
 }
 
-.btn.btn-styled:hover span {
-  color: black;
+.btn-primary:hover span{
+  color: var(--primary-color);
 }
 
+.btn-primary:hover{
+  background-color: var(--secondary-color) !important;
+    border-color: var(--primary-color) !important;
+}
 /* .btn.btn-styled::before {
   position: absolute;
   content: "";
