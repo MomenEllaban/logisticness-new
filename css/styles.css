@@ -406,7 +406,7 @@ ul.Service_ul li:before {
   color: black;
 }
 
-.btn.btn-styled::before {
+/* .btn.btn-styled::before {
   position: absolute;
   content: "";
   top: 0;
@@ -418,12 +418,12 @@ ul.Service_ul li:before {
   transform: skew(22deg);
   transition: 0.5s;
   z-index: 0;
-}
+} */
 
-.btn.btn-styled:hover::before {
+/* .btn.btn-styled:hover::before {
   width: 120%;
   opacity: 1;
-}
+} */
 
 .services-grid .card-body .card-text {
   font-size: 1.2rem;
