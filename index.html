@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="./imgs/fav.png" type="image/x-icon">
+    <title>Logisticness</title>
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <base href="./">
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-storage.js"></script>
+    <script src="./js/config.js"></script>
+</head>
+
+<body>
+    <div class="loader-overlay">
+        <div class="loader"></div>
+    </div>
+    <!-- <div class="loader"></div> -->
+
+
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-transparent fixed-top">
+        <div class="container-md">
+            <a class="navbar-brand" href="#">
+
+
+                <img class="logo_home" src="imgs/wlogo2.png" alt="">
+                <img class="logo_body hidden" src="imgs/wlogo33.png" alt="">
+
+
+            </a>
+            <button class="navbar-toggler" onclick="applyStyles()" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul id="custom-nav-links" class="navbar-nav mt-4 mt-lg-0 ms-auto gap-lg-4 pb-3 pb-lg-0">
+                    <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about-us">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#career">Career</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#meet-us">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- Home Section -->
+    <section id="home">
+
+
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active  item1">
+                    <div style="width: 100%; height: 100%; opacity: .6; background-color: black;"></div>
+                    <div style="visibility: hidden;">
+                        <img src="imgs/slider/1.png" alt="">
+                        <img src="imgs/slider/2.png" alt="">
+                        <img src="imgs/slider/3.png" alt="">
+                        <img src="imgs/slider/4.png" alt="">
+                        <img src="imgs/slider/5.png" alt="">
+                        <img src="imgs/slider/6.png" alt="">
+                    </div>
+
+                    <div class="divider_pa d-flex justify-content-start">
+                        <span class="divider"> </span>
+                    </div>
+                    <h1 class="carousel_caption_sty">
+                        <p>
+                            Forge a strategic partnership with Logisticsness and
+                            <br class="none_br">
+                            experience a new level of speed, visibility and
+                            <br class="none_br">
+                            control over your suplly chain.
+                        </p>
+                    </h1>
+                </div>
+
+
+                <div class="carousel-item item2">
+                    <div style="width: 100%; height: 100%; opacity: .6; background-color: black;"></div>
+                    <div class="divider_pa d-flex justify-content-start">
+                        <span class="divider"> </span>
+                    </div>
+                    <h1 class="carousel_caption_sty">
+                        <p>
+                            We've got you covered across all modes ,
+                            Air, Sea, and Land.
+                        </p>
+                    </h1>
+                </div>
+
+                <div class="carousel-item item3">
+                    <div style="width: 100%; height: 100%; opacity: .6; background-color: black;"></div>
+                    <div class="divider_pa d-flex justify-content-start">
+                        <span class="divider"> </span>
+                    </div>
+                    <h1 class="carousel_caption_sty">
+                        <p>
+                            Dont let red tape and procedures slow you down.
+                            <br class="none_br">
+                             Acceletrate your freight forwording with
+                             <br class="none_br">
+                            a trusted partner at your side.
+                        </p>
+                    </h1>
+                </div>
+
+                <div class="carousel-item item4">
+                    <div style="width: 100%; height: 100%; opacity: .6; background-color: black;"></div>
+                    <h1 class="carousel_caption_sty">
+                        <p>Forge a strategic partnership with Logisticsness and
+                            <br class="none_br">
+                            experience a new level of speed, visibility
+                            and 
+                            <br class="none_br">
+                            control over
+                            your suplly chain.
+                        </p>
+                    </h1>
+                </div>
+                <div class="carousel-item item5">
+                    <div style="width: 100%; height: 100%; opacity: .6; background-color: black;"></div>
+                    <h1 class="carousel_caption_sty">
+                        <p> We've got you covered across all modes ,
+                            Air, Sea, and Land.</p>
+                    </h1>
+                </div>
+                <div class="carousel-item item6">
+                    <div style="width: 100%; height: 100%; opacity: .6; background-color: black;"></div>
+                    <h1 class="carousel_caption_sty">
+                        <p> Dont let red tape and procedures slow you down.
+                            <br class="none_br">
+
+                            Acceletrate your freight forwording with
+                            <br class="none_br">
+                            a trusted partner at your side.
+                        </p>
+                    </h1>
+                </div>
+
+
+            </div>
+
+            <!-- <div class="carousel-inner">
+                <div class="carousel-item active" style="background-image: url('./imgs/slider-imgs/image1.jpg');">
+                    <div style="width: 100%; height: 100%; opacity: .6; background-color: black;"></div>
+
+                    <p class="carousel_caption_sty">
+                        Forge a strategic partnership with Logisticsness and experience a new level of speed, visibility
+                        and control over your suplly chain.
+                    </p>
+                </div>
+                <div class="carousel-item" style="background-image: url('./imgs/slider-imgs/image2.jpg');">
+                    <div style="width: 100%; height: 100%; opacity: .6; background-color: black;"></div>
+                    <p class="carousel_caption_sty">
+                        We've got you covered across all modes ,
+                        Air, Sea, and Land.
+                    </p>
+                </div>
+                <div class="carousel-item" style="background-image: url('./imgs/slider-imgs/image1.jpg');">
+                    <div style="width: 100%; height: 100%; opacity: .6; background-color: black;"></div>
+                    <p class="carousel_caption_sty">
+                        Dont let red tape and procedures slow you down.
+                        Acceletrate your freight forwording with a trusted partner at your side.
+                    </p>
+                </div>
+            </div> -->
+
+
+
+            <div id="scroll-down">
+                <i class="fa-solid fa-angles-down"></i>
+            </div>
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+
+    </section>
+
+
+    <div class="container-md">
+        <!-- Features Section -->
+        <!-- <section class="features text-center">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 feature">
+                        <i class="fas fa-shipping-fast"></i>
+                        <h3>Fast Delivery</h3>
+                        <p>Get your products delivered swiftly and securely.</p>
+                    </div>
+                    <div class="col-md-4 feature">
+                        <i class="fas fa-box-open"></i>
+                        <h3>Secure Packaging</h3>
+                        <p>We ensure the best packaging for your products.</p>
+                    </div>
+                    <div class="col-md-4 feature">
+                        <i class="fas fa-headset"></i>
+                        <h3>24/7 Support</h3>
+                        <p>Our support team is available round the clock.</p>
+                    </div>
+                </div>
+            </div>
+        </section> -->
+
+        <!-- About Us Section -->
+        <section id="about-us">
+            <div class="text-center px-3 all_flex">
+                <h2 class="head_text">About Us</h2>
+                <br>
+
+                <div class="row  ">
+                    <div class="col-md-8 col-sm-6 pb-4 text-start">
+                        <p>
+                            Logisticness is an innovative freight forwarding company founded in 2024 by a team of
+                            industry
+                            veterans.
+                            <br>
+                            We're on a mission to revolutionize global logistics through exceptional service,
+                            cutting-edge technology, and a collaborative, customer-centric approach.
+                        </p>
+
+                        <br>
+                        <a href="./about-us.html" class="btn btn-primary btn-styled mx-auto btn_padding"><span>Read
+                                More</span></a>
+                    </div>
+                    <div class="col-md-4 col-sm-6 d-none d-sm-block ">
+                        <img class="image_about" src="./imgs/about2.jpg" style="width: 80%;">
+
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+
+    </div>
+
+
+
+    <div class="container-fluid  fluid_services">
+        <div class="container">
+            <!-- Services Section -->
+            <section id="services">
+                <div class="text-center all_flex">
+                    <h2 class="head_text">Our Services</h2>
+                    <br>
+                </div>
+                <div class="services-grid d-grid">
+                    <div class="card service">
+
+                        <div class="card-img-container">
+                            <a href="./services/Sea-Freight.html"> <img src="./imgs/services/sea-freight-thumbnail.jpg"
+                                    class="card-img-top" alt="...">
+                            </a>
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title">Sea Freight</h3>
+                            <p class="card-text">
+                                Streamlined transoceanic trade: Experience hassle-free shipping for your 20ft and 40ft
+                                container goods, facilitating your import and export operations across the globe.
+                            </p>
+
+
+                            <a class="btn btn-primary btn-styled" href="./services/Sea-Freight.html">
+                                <span>Read More</span>
+                            </a>
+
+
+                        </div>
+                    </div>
+                    <div class="card service">
+                        <div class="card-img-container">
+                            <a href="./services/air-freight.html">
+                                <img src="./imgs/services/air-freight-thumbnail.jpg" class="card-img-top" alt="...">
+                            </a>
+                        </div>
+
+                        <div class="card-body">
+                            <h3 class="card-title">Air Freight</h3>
+                            <p class="card-text">
+                                Global air import and export solutions: Optimize your supply chain with our
+                                comprehensive
+                                air freight capabilities, providing rapid and dependable movement of your shipments
+                                across
+                                borders.
+                            </p>
+
+
+                            <a class="btn btn-primary btn-styled" href="./services/air-freight.html">
+                                <span>Read More</span>
+                            </a>
+
+
+                        </div>
+                    </div>
+                    <div class="card service">
+
+
+                        <div class="card-img-container">
+                            <a href="./services/custom-clearance.html">
+                                <img src="./imgs/services/custom-clearance-thumbnail.jpg" class="card-img-top"
+                                    alt="...">
+                            </a>
+                        </div>
+
+                        <div class="card-body">
+                            <h3 class="card-title">Custom Clearance</h3>
+                            <p class="card-text">
+                                Expedite Your Cross-Border Logistics: Trust our technical brokerage expertise to handle
+                                customs clearance, eliminating delays and facilitating the efficient movement of your
+                                goods
+                                across borders.
+                            </p>
+
+
+                            <a class="btn btn-primary btn-styled" href="./services/custom-clearance.html">
+                                <span>Read More</span>
+                            </a>
+
+                        </div>
+                    </div>
+                    <div class="card service">
+
+                        <div class="card-img-container">
+                            <a href="./services/in-land-transport.html">
+                                <img src="./imgs/services/in-land-transport-thumbnail.jpg" class="card-img-top"
+                                    alt="...">
+                            </a>
+                        </div>
+
+                        <div class="card-body">
+                            <h3 class="card-title">In-land transport</h3>
+                            <p class="card-text">
+                                Nationwide Egyptian Port Connectivity: Expand the reach of your import and export
+                                operations
+                                with our extensive inland transportation network, providing door-to-door services from
+                                and
+                                to all major Egyptian ports.
+                            </p>
+
+
+                            <a class="btn btn-primary btn-styled" href="./services/in-land-transport.html">
+                                <span>Read More</span>
+                            </a>
+
+
+                        </div>
+                    </div>
+                    <div class="card service">
+
+                        <div class="card-img-container">
+                            <a href="./services/warehousing.html">
+                                <img src="./imgs/services/warehousing-thumbnail.jpg" class="card-img-top" alt="...">
+                            </a>
+                        </div>
+
+
+                        <div class="card-body">
+                            <h3 class="card-title">warehousing</h3>
+                            <p class="card-text">Take advantage of our reliable warehousing services to keep your
+                                shipments
+                                protected from any unforeseen circumstances, allowing you to focus on your core business
+                                activities with peace of mind.</p>
+
+
+
+                            <a class="btn btn-primary btn-styled" href="./services/warehousing.html">
+                                <span>Read More</span>
+                            </a>
+
+
+                        </div>
+                    </div>
+                    <div class="card service">
+
+                        <div class="card-img-container">
+                            <a href="./services/consulting.html">
+                                <img src="./imgs/services/consulting-thumbnail.jpg" class="card-img-top" alt="...">
+                            </a>
+                        </div>
+
+
+                        <div class="card-body">
+                            <h3 class="card-title">consulting</h3>
+                            <p class="card-text">
+                                Comprehensive Shipping Guidance from Logistics Professionals: Our team of seasoned
+                                logistics
+                                experts will be with you every step of the way, offering tailored advice on the most
+                                suitable shipping routes and container options to meet the unique requirements of your
+                                cargo.
+                            </p>
+
+
+
+                            <a class="btn btn-primary btn-styled" href="./services/consulting.html">
+                                <span>Read More</span>
+                            </a>
+
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+    <div class="container">
+        <!-- Career Section -->
+
+
+
+        <section id="career">
+            <h2 class="col-12 text-center  head_text">Career</h2>
+
+            <br>
+
+
+
+
+            <div class="row w-100">
+
+
+                <div class="col-xs-12 col-sm-6">
+                    <div class="box">
+                        <img src="imgs/career.png" width="70%" alt="">
+                    </div>
+                </div>
+
+
+
+                <div class="col-xs-12 col-sm-6">
+                    <div class="box">
+                        <form class="p-2 text-center w-100" onsubmit="joinUsFormHandler(event)">
+
+
+                            <div class="career-form">
+                                <div class="mb-3">
+                                    <input type="text" class="form-control" name="name" placeholder="Your Name"
+                                        required>
+                                </div>
+                                <div class="mb-3">
+                                    <input type="email" class="form-control" name="email" placeholder="Your Email"
+                                        required>
+                                </div>
+                                <div class="mb-3">
+                                    <input type="phone" class="form-control" name="phone" placeholder="Your Phone"
+                                        required>
+                                </div>
+                                <div class="mb-3 hidden">
+                                    <input type="file" class="form-control" name="resume" onchange="testChange(event)"
+                                        accept=".pdf" required>
+                                </div>
+                                <div class="input-group mb-3" style="cursor: pointer;" onclick="testClick(event)">
+                                    <span class="input-group-text" id="basic-addon1">Upload CV</span>
+                                    <input type="text" class="form-control mt-0" style="cursor: pointer;"
+                                        placeholder="No file chosen" readonly aria-describedby="basic-addon1">
+                                </div>
+
+                                <p id="message" class="text-success text-center">&nbsp;</p>
+
+                            </div>
+                            <button type="submit" class="btn btn-primary mx-auto">
+                                <span class="is-not-submitting">
+                                    Send <i class="fa-solid fa-paper-plane"></i>
+                                </span>
+                                <span class="is-submitting">
+                                    <span class="spinner-grow spinner-grow-sm" role="status" aria-hidden="true"></span>
+                                    Sending...
+                                </span>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+
+
+
+            </div>
+
+
+        </section>
+
+
+
+    </div>
+
+
+    <div class="container-fluid">
+        <!-- Meet Us Section -->
+        <section id="meet-us">
+            <div class="container-md all_flex">
+                <h2 class="col-12 text-center  head_text">Contact Us</h2>
+                <br>
+
+
+                <div class="row w-100">
+
+                    <div class="col-xs-12 col-sm-8">
+
+                        <div class="" style="padding-left: 0.2rem;">
+
+                            <h3>EGYPT</h3>
+                            <hr>
+
+                            <div class="d-flex flex-column">
+                                <h4><b>commercial office: </b></h4>
+                                <h4>
+                                    17 zefal, muharam bek,
+
+                                    Alexandria 3rd floor,
+                                    <br> Apatment number 5
+                                </h4>
+                            </div>
+                            <br>
+
+
+                            <div class="d-flex">
+                                <h4><b>Office Number: </b></h4> &nbsp;<h4>01212251884</h4>
+
+                            </div>
+                            <br>
+
+                            <div class="d-flex">
+
+                                <h4><b>Email:</b></h4>
+                                <h4>&nbsp;info@logisticness.com</h4>
+                            </div>
+
+
+
+
+                            <hr>
+                            <div class="social-icons d-flex gap-4 justify-content-start">
+                                <span>
+                                    <a href="https://www.instagram.com/" target="_blank"><i
+                                            class="fa-brands fa-instagram"></i></a>
+                                </span>
+
+                                <span>
+                                    <a href="https://www.linkedin.com/" target="_blank"><i
+                                            class="fa-brands fa-linkedin"></i></a>
+
+                                </span>
+                                <span>
+                                    <a href="https://www.facebook.com/" target="_blank"> <i
+                                            class="fa-brands fa-facebook"></i></a>
+                                </span>
+
+
+                            </div>
+
+                            <h4 class="m-0 text-start">&copy; 2024 Logisticness. All rights reserved.</h4>
+                            <!-- <h6 class="m-0 text-start">&copy; 2024 Logisticness. All rights reserved.</h6> -->
+
+
+
+                        </div>
+                    </div>
+
+
+                    <!-- <div class="col-xs-12 col-sm-6">
+                        <div class="box">
+                        </div>
+                    </div> -->
+
+                </div>
+
+            </div>
+        </section>
+        <a href="#" class="back-to-top">
+            <i class="fas fa-arrow-up"></i>
+        </a>
+    </div>
+
+
+
+
+
+
+
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="./js/scripts.js"></script>
+
+    <script>
+        function testClick(e) {
+            const fileInput = e.target.closest('form').querySelector('input[type="file"]');
+            const fileName = fileInput.files[0];
+            fileInput.click()
+        }
+        function testChange(e) {
+            const displayedFileInput = e.target.closest('form').querySelector('.input-group input');
+            const fileName = e.target.files[0];
+            displayedFileInput.value = fileName ? fileName.name : '';
+        }
+    </script>
+
+
+</body>
+
+</html>
