@@ -1,6 +1,11 @@
-const app = firebase.initializeApp(firebaseConfig);
-const storage = firebase.storage();
+let app, storage;
 
+try {
+  app = firebase.initializeApp(firebaseConfig);
+storage = firebase.storage();
+} catch (error) {
+  
+}
 function joinUsFormHandler(e) {
   e.preventDefault();
   [...e.target.querySelectorAll("button")].forEach((btn) => {
@@ -69,6 +74,7 @@ function toggleNavbarStyle() {
     document.querySelector('.navbar-brand .logo_body').classList.remove('hidden')
     document.querySelector('.navbar-brand .logo_home').classList.add('hidden')
   } else {
+    console.log('momen')
     document.querySelector(".navbar").classList.add("navbar-transparent");
     document.querySelector('.navbar-brand .logo_body').classList.add('hidden')
     document.querySelector('.navbar-brand .logo_home').classList.remove('hidden')
@@ -125,10 +131,10 @@ addEventListener("load", () => {
   showToTopArrow();
   addEventListener('resize', applyStyles);
   
-  toggleNavbarStyle();
+  // toggleNavbarStyle();
 
   addEventListener("scroll", () => {
-    toggleNavbarStyle();
+    // toggleNavbarStyle();
     showToTopArrow();
     activeSectionOnScroll();
   });
@@ -140,11 +146,15 @@ addEventListener("load", () => {
     })
   })
   // move to the next section arrow on the header
-  document
+  try {
+    document
     .querySelector("#scroll-down")
     .addEventListener("click", () =>
       window.scrollBy(0, window.innerHeight - window.scrollY - 58)
     );
+  } catch (error) {
+    
+  }
 
   try {
     setTimeout(() => {
