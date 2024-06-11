@@ -285,6 +285,7 @@ ul.Service_ul li:before {
   display: inline-block;
   height: 10px;
   margin-right: 6px;
+  margin-bottom: 6px;
   width: 10px;
 }
 
