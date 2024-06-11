@@ -6,6 +6,9 @@
 .hidden {
   display: none !important;
 }
+.txt-nowrap {
+  white-space: nowrap;
+}
 
 @font-face {
   font-family: "OpenSans";
@@ -210,6 +213,9 @@ section:not(#home) {
   align-items: center;
   flex-direction: column;
 }
+section#meet-us {
+  padding-bottom: .25rem !important;
+}
 
 p {
   font-size: 1.7rem;
@@ -303,7 +309,8 @@ ul.Service_ul li:before {
   background-color: #0c3642dc;
   z-index: 9999;
   position: fixed;
-  transition: all 2s;
+  transition: all 750ms;
+  opacity: 1;
 }
 
 .loader {

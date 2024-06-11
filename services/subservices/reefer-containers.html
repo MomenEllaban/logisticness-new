@@ -2,26 +2,28 @@
 <html lang="en">
 
 <head>
+    <base href="../../">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" href="../../imgs/fav.png" type="image/x-icon">
+    <link rel="icon" href="imgs/fav.png" type="image/x-icon">
     <title>Logisticness</title>
-    <link rel="stylesheet" href="../../css/all.min.css">
-    <link rel="stylesheet" href="../../css/bootstrap.min.css">
-    <link rel="stylesheet" href="../../css/styles.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 
 
 <body style="min-height: 100vh;display: grid;grid-template-rows: auto 1fr auto;">
+
+    <div class="loader-overlay">
+        <div class="loader"></div>
+    </div>
+
+
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
         <div class="container-md">
-            <a class="navbar-brand" href="#">
-
-
-                <img class="logo_home" src="imgs/wlogo2.png" alt="">
-                <img class="logo_body hidden" src="imgs/wlogo33.png" alt="">
-
-
+            <a class="navbar-brand" href="index.html#">
+                <img class="logo_body" src="imgs/wlogo33.png" alt="">
             </a>
             <button class="navbar-toggler" onclick="applyStyles()" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
@@ -30,24 +32,22 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul id="custom-nav-links" class="navbar-nav mt-4 mt-lg-0 ms-auto gap-lg-4 pb-3 pb-lg-0">
-                    <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#about-us">About Us</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#career">Career</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#meet-us">Contact Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./index.html#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./index.html#about-us">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./index.html#services">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./index.html#career">Career</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./index.html#meet-us">Contact Us</a></li>
                 </ul>
             </div>
         </div>
     </nav>
-
-
 
     <div class="container-md">
 
         <!-- Services Section -->
         <section id="services"  class=" mt-0">
             <div class="text-center all_flex">
-                <h2 class="head_text">Reffer containers solution </h2>
+                <h2 class="head_text">reefer containers solution </h2>
                 <br>
             </div>
 
@@ -119,11 +119,7 @@
 
 
         </section>
-        <a href="#" class="back-to-top">
-            <i class="fas fa-arrow-up"></i>
-        </a>
     </div>
-
 
     <div class="container-fluid">
         <!-- Meet Us Section -->
@@ -135,7 +131,7 @@
 
                 <div class="row w-100">
 
-                    <div class="col-xs-12 col-sm-4 order-2 order-sm-1">
+                    <div class="col-xs-12 col-sm-4 order-1 order-sm--1">
 
                         <div class="" style="padding-left: 0.2rem;">
 
@@ -143,19 +139,19 @@
                             <hr>
 
                             <div class="d-flex flex-column">
-                                <h4><b>commercial office: </b></h4>
-                                <h4>
+                                <h5><b>commercial office: </b></h5>
+                                <h5>
                                     17 zefal, muharam bek,
 
                                     Alexandria 3rd floor,
                                     <br> Apatment number 5
-                                </h4>
+                                </h5>
                             </div>
                             <br>
 
 
                             <div class="d-flex flex-wrap">
-                                <h4><b>Office Number: </b></h4> &nbsp;<h4>033906601</h4>
+                                <h5><b>Office Number: </b></h5> &nbsp;<h5>033906601</h5>
 
                             </div>
 
@@ -163,98 +159,84 @@
 
 
                             <div class="d-flex flex-wrap">
-                                <h4><b>Mobile: </b></h4> &nbsp;<h4>01212251884</h4>
+                                <h5><b>Mobile: </b></h5> &nbsp;<h5>01212251884</h5>
 
                             </div>
 
-                            
+
                             <br>
 
                             <div class="d-flex flex-wrap">
 
-                                <h4><b>Email:</b></h4>
-                                <h4>&nbsp;info@logisticness.com</h4>
+                                <h5><b>Email:</b></h5>
+                                <h5>&nbsp;info@logisticness.com</h5>
                             </div>
-
-
-
-
-                            <hr>
-                            <div class="social-icons d-flex gap-4 justify-content-start">
-                                <span>
-                                    <a href="https://www.instagram.com/logisticness" target="_blank"><i
-                                            class="fa-brands fa-instagram"></i></a>
-                                </span>
-
-                                <span>
-                                    <a href="https://www.linkedin.com/Logisticness" target="_blank"><i
-                                            class="fa-brands fa-linkedin"></i></a>
-
-                                </span>
-                                <span>
-                                    <a href="https://www.facebook.com/Logisticness" target="_blank"> <i
-                                            class="fa-brands fa-facebook"></i></a>
-                                </span>
-
-
-                            </div>
-
-                            <h4 class="m-0 text-start">&copy; 2024 Logisticness. All rights reserved.</h4>
-                            <!-- <h6 class="m-0 text-start">&copy; 2024 Logisticness. All rights reserved.</h6> -->
-
-
-
                         </div>
+
+                    </div>
+                    
+                    <div class="order-3">
+                        
+                        <hr>
+                        <div class="social-icons d-flex gap-4 justify-content-start">
+                            <span>
+                                <a href="https://www.instagram.com/logisticness" target="_blank"><i
+                                        class="fa-brands fa-instagram"></i></a>
+                            </span>
+
+                            <span>
+                                <a href="https://www.linkedin.com/Logisticness" target="_blank"><i
+                                        class="fa-brands fa-linkedin"></i></a>
+
+                            </span>
+                            <span>
+                                <a href="https://www.facebook.com/Logisticness" target="_blank"> <i
+                                        class="fa-brands fa-facebook"></i></a>
+                            </span>
+                        </div>
+
+                        <h5 class="m-0 text-start txt-nowrap">&copy; 2024 Logisticness. All rights reserved.</h5>
                     </div>
 
 
-                    <div class="col-md-4  col-sm-4  align-items-center order-1 order-sm-2">
+                    <div class="col-md-4  col-sm-4  align-items-center order-2 order-sm--2">
+                        <br class="d-block d-sm-none"><br class="d-block d-sm-none">
                         <h3>Our Service</h3>
+                        <hr>
                         <ul class=" Service_ul d-gri p-0">
-                            <li> <a href="services/Sea-Freight.html">Sea Freight</a></li>
-                            <li> <a href="services/air-freight.html">Air Freight</a>
+                            <li class="d-flex align-items-center">
+                                <h5><a href="services/sea-freight.html">Sea Freight</a></h5>
                             </li>
-                            <li><a href="services/custom-clearance.html">Custom Clearance</a>
+                            <li class="d-flex align-items-center">
+                                <h5><a href="services/air-freight.html">Air Freight</a></h5>
                             </li>
-                            <li><a href="services/in-land-transport.html">In-land transport</a>
+                            <li class="d-flex align-items-center">
+                                <h5><a href="services/custom-clearance.html">Custom Clearance</a></h5>
                             </li>
-                            <li>
-                                <a href="services/warehousing.html"> Warehousing</a>
+                            <li class="d-flex align-items-center">
+                                <h5><a href="services/in-land-transport.html">In-land transport</a></h5>
                             </li>
-                            <li>
-                                <a href="services/consulting.html">Consulting</a>
+                            <li class="d-flex align-items-center">
+                                <h5><a href="services/warehousing.html"> Warehousing</a></h5>
+                            </li>
+                            <li class="d-flex align-items-center">
+                                <h5><a href="services/consulting.html">Consulting</a></h5>
                             </li>
                         </ul>
 
                     </div>
 
-                    <div class="col-md-4  order-3">
-                     
-                    </div>
-
-
-
-
-
                 </div>
 
             </div>
         </section>
-        <a href="#" class="back-to-top">
-            <i class="fas fa-arrow-up"></i>
-        </a>
     </div>
+    <a href="services/subservices/reefer-containers.html#" class="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </a>
 
-    
-    <!-- <footer class="mt-4">
-        <div class="container">
-            <h6 class="m-0 text-start">&copy; 2024 Logisticness. All rights reserved.</h6>
-        </div>
-    </footer> -->
-
-
-
-    <script src="../../js/bootstrap.bundle.min.js"></script>
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/scripts.js"></script>
 </body>
 
 </html>

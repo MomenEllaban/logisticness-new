@@ -74,7 +74,6 @@ function toggleNavbarStyle() {
     document.querySelector('.navbar-brand .logo_body').classList.remove('hidden')
     document.querySelector('.navbar-brand .logo_home').classList.add('hidden')
   } else {
-    console.log('momen')
     document.querySelector(".navbar").classList.add("navbar-transparent");
     document.querySelector('.navbar-brand .logo_body').classList.add('hidden')
     document.querySelector('.navbar-brand .logo_home').classList.remove('hidden')
@@ -127,16 +126,14 @@ function showToTopArrow() {
 
 addEventListener("load", () => {
   applyStyles();
-  activeSectionOnScroll();
+  // activeSectionOnScroll();
   showToTopArrow();
   addEventListener('resize', applyStyles);
   
-  // toggleNavbarStyle();
 
   addEventListener("scroll", () => {
-    // toggleNavbarStyle();
     showToTopArrow();
-    activeSectionOnScroll();
+    // activeSectionOnScroll();
   });
   document.querySelectorAll("ul#custom-nav-links > li.nav-item> .nav-link").forEach(e => {
     e.addEventListener('click', () => {
@@ -157,12 +154,9 @@ addEventListener("load", () => {
   }
 
   try {
-    setTimeout(() => {
-      document.querySelector('.loader-overlay').style.opacity = 0;  
-    }, 1000);
-
+    document.querySelector('.loader-overlay').style.opacity = 0;
     setTimeout(() => {
         document.querySelector('.loader-overlay').style.display = 'none';
-    }, 2000);
+    }, 750);
   } catch (error) { }
 });
