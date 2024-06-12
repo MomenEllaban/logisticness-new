@@ -278,7 +278,7 @@ ul.Service_ul li {
   font-size: 1.2rem;
 }
 
-ul.Service_ul li:before {
+/* ul.Service_ul li:before {
   background: #006aff;
   border-radius: 50%;
   content: "";
@@ -287,7 +287,7 @@ ul.Service_ul li:before {
   margin-right: 6px;
   margin-bottom: 6px;
   width: 10px;
-}
+} */
 
 .info_footer {
   font-size: 1.2rem;
