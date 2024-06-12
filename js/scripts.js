@@ -126,7 +126,7 @@ function showToTopArrow() {
 
 addEventListener("load", () => {
 
-  // document.querySelector("year_copy").innerHTML = new Date().getFullYear()
+  document.querySelector(".year_copy").innerHTML = new Date().getFullYear();
 
   applyStyles();
   // activeSectionOnScroll();
