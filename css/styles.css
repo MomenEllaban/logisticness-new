@@ -289,6 +289,10 @@ ul.Service_ul li {
   width: 10px;
 } */
 
+#meet-us  ul > li > h5 > a:hover{
+  color: var(--primary-color);
+}
+
 .info_footer {
   font-size: 1.2rem;
 }
