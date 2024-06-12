@@ -124,20 +124,17 @@ function showToTopArrow() {
 ////////////////////////// START EVENT LISTENERS ////////////////////////////
 /////////////////////////////////////////////////////////////////////////////
 
-addEventListener("load", () => {
-
+addEventListener("DOMContentLoaded", () => {
   document.querySelector(".year_copy").innerHTML = new Date().getFullYear();
+})
 
+addEventListener("load", () => {
   applyStyles();
-  // activeSectionOnScroll();
   showToTopArrow();
   addEventListener('resize', applyStyles);
   
 
-  addEventListener("scroll", () => {
-    showToTopArrow();
-    // activeSectionOnScroll();
-  });
+  addEventListener("scroll", showToTopArrow);
   document.querySelectorAll("ul#custom-nav-links > li.nav-item> .nav-link").forEach(e => {
     e.addEventListener('click', () => {
       if (window.matchMedia('(max-width: 991px)').matches) {
