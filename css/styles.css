@@ -6,6 +6,7 @@
 .hidden {
   display: none !important;
 }
+
 .txt-nowrap {
   white-space: nowrap;
 }
@@ -33,7 +34,7 @@ a {
   padding: 0.5rem;
   /* padding: 0 0.5rem; */
 
-  
+
 }
 
 .navbar .nav-link {
@@ -213,6 +214,7 @@ section:not(#home) {
   align-items: center;
   flex-direction: column;
 }
+
 section#meet-us {
   padding-bottom: .25rem !important;
 }
@@ -289,7 +291,7 @@ ul.Service_ul li {
   width: 10px;
 } */
 
-#meet-us  ul > li > h5 > a:hover{
+#meet-us ul>li>h5>a:hover {
   color: var(--primary-color);
 }
 
@@ -422,17 +424,18 @@ ul.Service_ul li {
   color: var(--secondary-color);
   text-decoration: none;
 
-  
+
 }
 
-.btn-primary:hover span{
+.btn-primary:hover span {
   color: var(--primary-color);
 }
 
-.btn-primary:hover{
+.btn-primary:hover {
   background-color: var(--secondary-color) !important;
-    border-color: var(--primary-color) !important;
+  border-color: var(--primary-color) !important;
 }
+
 /* .btn.btn-styled::before {
   position: absolute;
   content: "";
@@ -509,7 +512,7 @@ ul.Service_ul li {
   .navbar {
     /* padding: 0; */
     /* min-height: 60px; */
-    padding:  0.2rem 0.5rem;
+    padding: 0.2rem 0.5rem;
 
   }
 
@@ -518,11 +521,11 @@ ul.Service_ul li {
     border: none !important;
   }
 
-  .none_br{
+  .none_br {
     display: none;
   }
 
-  
+
 
 }
 
@@ -606,6 +609,13 @@ li {
   background-position: 25% 75%;
 }
 
+.order-3 {
+  /* position: absolute; */
+  /* bottom: 0; */
+}
+
+
+
 @media screen and (max-width: 1077px) {
   #meet-us {
     background-position: 75% 78%;
@@ -643,7 +653,7 @@ li {
   /* max-width: 700px; */
   /* padding-top: 1rem; */
   margin-bottom: 0rem !important;
-  
+
 
 
 }
@@ -682,16 +692,44 @@ li {
 
 
     font-size: 1.3rem;
-        max-width: 250px !important;
-        line-height: 1.3;
-    
-        word-spacing: 2.6px;
+    max-width: 250px !important;
+    line-height: 1.3;
+
+    word-spacing: 2.6px;
 
 
   }
 
-  .image_about{width: 50% !important;}
+  .image_about {
+    width: 50% !important;
+  }
+
+
+
+
+  .meet-padding{
+    padding-bottom: 5rem;
+
+  }
+
+
 }
+
+
+
+@media screen and (max-width: 577px) {
+
+ 
+
+
+  .meet-padding{
+    padding-bottom: 5rem;
+
+  }
+
+
+}
+
 
 
 
