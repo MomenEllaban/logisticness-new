@@ -379,6 +379,14 @@ ul.Service_ul li {
   height: 240px;
 }
 
+
+.sea .card-img-container {
+  overflow: hidden;
+  height: 350px;
+}
+
+
+
 .card-img-container-services {
   overflow: hidden;
   height: 70px;
