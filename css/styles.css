@@ -211,9 +211,9 @@ section:not(#home) {
   flex-direction: column;
 }
 
-section#meet-us {
+/* section#meet-us {
   padding-bottom: 0.25rem !important;
-}
+} */
 
 p {
   font-size: 1.7rem;
